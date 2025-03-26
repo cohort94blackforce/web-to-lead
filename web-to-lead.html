@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2D2D2D;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #0072CE, #FFA500);
+            padding: 20px;
+        }
+        header img {
+            max-width: 150px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #0072CE;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image_123650291 (1).JPG" alt="Automation Solutions Logo">
+        <h1>Automation Solutions.org</h1>
+    </header>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dbm00000KjmRZ" method="POST">
+            <input type="hidden" name="oid" value="00Dbm00000KjmRZ">
+            <input type="hidden" name="retURL" value="http://blackforce.ca">
+            
+            <!-- Hidden Field for Lead Source -->
+            <input type="hidden" name="lead_source" value="Web">
+
+            <label for="first_name">First Name</label>
+            <input id="first_name" name="first_name" type="text" required>
+            
+            <label for="last_name">Last Name</label>
+            <input id="last_name" name="last_name" type="text" required>
+            
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+            
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+            
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
